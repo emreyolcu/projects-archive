@@ -1,0 +1,42 @@
+# Experiment Settings
+exp_dir: experiments/char
+seed: 0
+cuda: True
+log_level: info
+log_every: 10
+
+# Data Settings
+train_src: data/train.de-en.de.char
+train_tgt: data/train.de-en.en.char
+dev_src: data/valid.de-en.de.char
+dev_tgt: data/valid.de-en.en.char
+test_src: data/test.de-en.de.char
+test_tgt: data/test.de-en.en.char
+vocab_size: 400
+vocab_freq_cutoff: 0
+
+# Model Settings
+encoder_embed_size: 128
+encoder_hidden_size: 1024
+decoder_embed_size: 512
+decoder_hidden_size: 1024
+uniform_init: 0.1
+encoder_layers: 1
+decoder_layers: 2
+char_encoder: True
+
+# Train Settings
+max_epoch: 30
+lr: 0.0001
+clip_grad: 1.0
+batch_size: 64
+dropout: 0.2
+
+# Decode Settings
+decode_model_file: model_mle.pth
+max_decoding_time_step: 500
+beam_size: 20
+decode_dev_src: data/valid.de-en.de.char
+decode_dev_tgt: data/valid.de-en.en.char
+decode_test_src: data/test.de-en.de.char
+decode_test_tgt: data/test.de-en.en.char

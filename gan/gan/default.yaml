@@ -1,0 +1,17 @@
+seed: 1
+
+log_level: info
+log_file: default.log
+
+report_interval: 1000
+generate_interval: 1000
+grid_shape: [10, 10]
+show_results: True
+
+z_size: 128
+g_hidden_sizes: [1024, 1024]
+d_hidden_sizes: [256, 256]
+
+iterations: 50000
+batch_size: 128
+lr: 0.0002

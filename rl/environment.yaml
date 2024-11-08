@@ -1,0 +1,12 @@
+name: rl
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.6
+  - numpy
+  - matplotlib
+  - pytorch=0.3.1
+  - opencv
+  - pip:
+    - gym[classic_control,box2d,atari]

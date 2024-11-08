@@ -1,0 +1,11 @@
+name: gan
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.6
+  - numpy
+  - matplotlib
+  - pytorch=1.0.0
+  - torchvision
+  - pyyaml

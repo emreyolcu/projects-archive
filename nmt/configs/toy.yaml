@@ -1,0 +1,38 @@
+# Experiment Settings
+exp_dir: experiments/toy
+seed: 0
+cuda: True
+log_level: debug
+log_every: 1
+
+# Data Settings
+train_src: data/examples/debug.de
+train_tgt: data/examples/debug.en
+dev_src: data/examples/debug.de
+dev_tgt: data/examples/debug.en
+test_src: data/examples/debug.de
+test_tgt: data/examples/debug.en
+vocab_size: 50000
+vocab_freq_cutoff: 0
+
+# Model Settings
+encoder_embed_size: 256
+encoder_hidden_size: 256
+decoder_embed_size: 256
+decoder_hidden_size: 256
+uniform_init: 0.1
+encoder_layers: 1
+decoder_layers: 1
+
+# Train Settings
+max_epoch: 200
+lr: 0.001
+clip_grad: 5.0
+batch_size: 64
+dropout: 0.2
+
+# Decode Settings
+model_file: model.pth
+output_file: decode.txt
+max_decoding_time_step: 100
+beam_size: 5

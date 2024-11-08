@@ -1,0 +1,12 @@
+name: nmt
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.6.5
+  - numpy
+  - nltk
+  - pyyaml
+  - pytorch=0.4.1
+  - matplotlib
+  - tqdm
